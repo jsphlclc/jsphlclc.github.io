@@ -1,0 +1,147 @@
+*, html {
+    margin:0;
+    padding:0;  
+}
+
+body {
+    font-family: 'Montserrat';font-size: 22px;
+}
+
+.social{
+    margin-top: 10px;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.home, .about, .resume, .skills, .capstone {
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.home .overlay,
+.about .overlay {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 5vw;
+}
+
+.home h1 {
+    color: white;
+    font-size: 4vw;
+    font-weight: 900;
+    margin-top: 10vh;
+    margin-bottom: 0;
+}
+
+.home p {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding-top: 2vh;
+}
+
+.learn-more-btn {
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 6vh;
+    background-color: #27D360;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: black;
+    transition: background 0.2s;
+}
+
+.learn-more-btn:hover {
+    background: #1fa94c;
+}
+
+.social {
+    margin-top: 4vh;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social img {
+    width: 40px;
+    height: 40px;
+}
+
+.about h1 {
+    font-size: 3vw;
+    font-weight: 900;
+    color: white;
+}
+
+.about p {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1rem;
+    color: white;
+    margin-top: 40px;
+    line-height: 1.8;
+}
+
+@media (max-width: 900px) {
+    .home h1 {
+        font-size: 8vw;
+    }
+    .about h1 {
+        font-size: 6vw;
+    }
+    .learn-more-btn {
+        width: 150px;
+        height: 45px;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .home .overlay,
+    .about .overlay {
+        padding: 0 2vw;
+    }
+    .home h1 {
+        font-size: 10vw;
+        margin-top: 5vh;
+    }
+    .about h1 {
+        font-size: 8vw;
+    }
+    .learn-more-btn {
+        width: 100%;
+        min-width: 120px;
+        height: 40px;
+        font-size: 0.9rem;
+    }
+    .social img {
+        width: 32px;
+        height: 32px;
+    }
+}
